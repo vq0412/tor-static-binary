@@ -251,13 +251,13 @@ jobs:
         merge-multiple: true
         path: /tmp/results
 
-     - name: Download arm64-musl artifact
-       run: |
-         cd "/tmp/results"
-         wget -nv "$ARTIFACT_ARM64_MUSL_ZIP_URL"
-         wget -nv "$ARTIFACT_ARM64_MUSL_HASH_URL"
+     #- name: Download arm64-musl artifact
+     #  run: |
+     #    cd "/tmp/results"
+     #    wget -nv "$ARTIFACT_ARM64_MUSL_ZIP_URL"
+     #    wget -nv "$ARTIFACT_ARM64_MUSL_HASH_URL"
 
-         sha256sum -c *-aarch64-musl.tar.gz.sha256.txt
+     #    sha256sum -c *-aarch64-musl.tar.gz.sha256.txt
          
      - name: List builds
        run: |
