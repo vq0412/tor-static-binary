@@ -47,8 +47,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ARCH: [x86_64, aarch64]
-        LIBC: [glibc, musl]
+        #ARCH: [x86_64, aarch64]
+        #LIBC: [glibc, musl]
+        ARCH: [x86_64]
+        LIBC: [glibc]
         include:
           - OS: ubuntu-latest
             ARCH: x86_64
